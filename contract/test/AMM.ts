@@ -31,6 +31,7 @@ describe('AMM', function () {
         return { amm, token0: usdc, token1: joe, owner, otherAccount };
     }
 
+    // テスト実行
     describe('init', function () {
         it('Should init', async function () {
             const { amm } = await loadFixture(depuloyAmmContract);
